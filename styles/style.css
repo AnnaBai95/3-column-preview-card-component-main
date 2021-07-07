@@ -1,0 +1,117 @@
+body {
+  background-color: #e6e6e6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.card-inner {
+  padding: 30px;
+  width: 15%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.card-inner h1 {
+  color: #f2f2f2;
+  font-family: Big Shoulders Display, cursive;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+}
+
+.card-inner p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Lexend Deca, sans-serif;
+  font-size: 0.9375rem;
+}
+
+.card-inner .card-body {
+  min-height: 250px;
+}
+
+.card-inner .card-body h1 {
+  padding-bottom: 30px;
+}
+
+.card-inner .card-body p {
+  line-height: 1.5;
+}
+
+.card-inner .card-header {
+  padding-bottom: 30px;
+}
+
+.card-orange {
+  background-color: #e38826;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.card-orange a {
+  color: #e38826;
+}
+
+.card-cyan {
+  background-color: #006970;
+}
+
+.card-cyan a {
+  color: #006970;
+}
+
+.card-vcyan {
+  background-color: #004241;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.card-vcyan a {
+  color: #004241;
+}
+
+.btn-learn {
+  border-radius: 30px;
+  padding: 9px 21px;
+  background-color: #f2f2f2;
+  font-family: Lexend Deca, sans-serif;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top-left-radius: 6px;
+  }
+  .card-inner {
+    width: 70%;
+  }
+  .card-orange {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: none;
+    border-bottom-left-radius: 0px;
+  }
+  .card-vcyan {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

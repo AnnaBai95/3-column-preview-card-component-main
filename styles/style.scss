@@ -1,0 +1,117 @@
+$font-primary: Big Shoulders Display, cursive;
+$font-secondary: Lexend Deca, sans-serif;
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$t-white: hsla(0, 0%, 100%, 0.75);
+$vl-gray: hsl(0, 0%, 95%);
+
+body
+{
+    background-color: #e6e6e6;
+}
+a {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-inner {
+    padding: 30px;
+    width: 15%;
+    flex-grow: 0;
+}
+
+.card-inner {
+    h1 {
+        color: $vl-gray;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        font-size: 1.875rem;
+    }
+    p {
+        color: $t-white;
+        font-family: $font-secondary;
+        font-size: 0.9375rem;
+    }
+
+    .card-body {
+        min-height: 250px;
+
+        h1 {
+            padding-bottom: 30px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    }
+
+    .card-header {
+        padding-bottom: 30px;
+    }
+}
+
+.card-orange {
+    background-color: $bright-orange;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+    a {
+        color: $bright-orange;
+    }
+}
+
+.card-cyan {
+    background-color: $dark-cyan;
+
+    a {
+        color: $dark-cyan;
+    }
+}
+
+.card-vcyan {
+    background-color: $very-dark-cyan;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    a {
+        color: $very-dark-cyan;
+    }
+}
+
+.btn-learn {
+    border-radius: 30px;
+    padding: 9px 21px;
+    background-color: $vl-gray;
+    font-family: $font-secondary;
+    font-size: 0.75rem;
+}
+
+// Media queries
+
+@media (max-width: 900px) {
+    .card {
+        flex-direction: column;
+        border-top-left-radius: 6px;
+    }
+    .card-inner{
+        width: 70%;
+    }
+
+    .card-orange{
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: none;
+        border-bottom-left-radius: 0px;
+    }
+
+    .card-vcyan {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-top-right-radius: 0px;
+    }
+}
