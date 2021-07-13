@@ -1,9 +1,16 @@
 body {
   background-color: #e6e6e6;
+  font-family: Lexend Deca, sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+a:active, a:hover {
+  color: rgba(255, 255, 255, 0.75) !important;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  background-color: transparent;
 }
 
 .card {
@@ -99,6 +106,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     border-top-left-radius: 6px;
+    padding: 50px 0 50px 0px;
   }
   .card-inner {
     width: 70%;

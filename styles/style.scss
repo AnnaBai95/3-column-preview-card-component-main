@@ -6,12 +6,20 @@ $very-dark-cyan: hsl(179, 100%, 13%);
 $t-white: hsla(0, 0%, 100%, 0.75);
 $vl-gray: hsl(0, 0%, 95%);
 
-body
-{
+body {
     background-color: #e6e6e6;
+    font-family: $font-secondary;
 }
+
 a {
     text-decoration: none;
+}
+
+a:active, a:hover{
+
+    color: $t-white !important;
+    border: 2px solid $t-white;
+    background-color: transparent;
 }
 
 .card {
@@ -98,12 +106,13 @@ a {
     .card {
         flex-direction: column;
         border-top-left-radius: 6px;
+        padding: 50px 0 50px 0px;
     }
-    .card-inner{
+    .card-inner {
         width: 70%;
     }
 
-    .card-orange{
+    .card-orange {
         border-top-right-radius: 6px;
         border-bottom-right-radius: none;
         border-bottom-left-radius: 0px;
